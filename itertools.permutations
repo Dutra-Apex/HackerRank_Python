@@ -1,0 +1,9 @@
+from itertools import permutations
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+s,k = input().split()
+
+arr = (list(permutations(sorted(s), int(k))))
+
+for i in arr:
+    print("".join(i))
